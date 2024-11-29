@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat Alternates", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    padding-top: 0px;
+    background-color: rgb(234, 234, 234);
+
+}
+
+.container{
+    max-width: 1320px;
+    padding: 0 15px 0 15px;
+    margin: 0 auto;
+    background-color: rgb(234, 234, 234);
+}
+
+.section-title{
+    font-size: 2rem;
+    padding: 0 15px 0 15px;
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+
+/* Imagotipo y barra de navegacion*/
+
+header{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(234, 234, 234);
+}
+
+#logo {
+    width: 339px;
+    height: 110px;
+    background: url(../images/imagotipo.jpg) no-repeat center center;
+    font-size: 0; 
+}
+
+.navbar-nav .nav-link {
+    color: rgb(95, 69, 220);
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(42, 230, 198); 
+}
+
+/*Contenido*/
+
+main{
+    min-height: 70vh;
+}
+
+/*  Contenido 1: Quienes somos*/
+
+#quienes-somos{
+    width: 100vw;
+    background-color: rgb(21, 6, 73);
+    color: white;
+    padding: 20px 0;
+}
+
+#quienes-somos .container {
+    max-width: 1320px;
+    background-color: rgb(21, 6, 73);
+}
+
+#quienes .content {
+    flex: 1; 
+    max-width: 100%; 
+}
+
+#quienes .image {
+    flex: 0 0 30%; 
+}
+
+#quienes .subtitulo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;; 
+}
+
+#quienes p {
+    margin-bottom: 1rem; 
+    font-size: 1rem;
+    color: black;
+}
+
+#quienes-somos ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#quienes-somos ul li{
+    margin-bottom: 15px;
+}
+
+
+
+/* Contenido 2: Valores y enfoques*/
+
+#valores{
+    width: 100%;
+    padding:30px 0 0 0;
+    margin: 0 auto;
+}
+
+#valores .row{
+    padding:10px;
+    margin: 0;
+}
+
+#valores .card {
+    background-color: rgb(234, 234, 234);
+    border: none;
+    box-shadow: none;
+    border-radius: 10px;
+    padding: 0px;
+    margin-bottom: 20px;
+    overflow: hidden; 
+    position: relative; 
+}
+
+
+#valores h2{
+    color: rgb(95, 69, 220);
+}
+
+#valores .image-container img {
+    width: 100%; 
+    max-width: 300px; 
+    margin-bottom: 0px;
+    border-radius: 10px; 
+}
+
+#valores .text-container {
+    display: none; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 15px;
+    border-radius: 10px;
+    color: rgb(95, 69, 220); 
+    width:100%; 
+    min-height: 100%; 
+    box-sizing: border-box; 
+    text-align: center; 
+    z-index: 2; 
+}
+
+
+#valores .image-container:hover .text-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+#valores .text-container p {
+    font-size: 20px; 
+    margin: 0;
+}
+
+
+
+
+/* Contenido 3: Opiniones de clientes*/
+
+#opiniones{
+    width: 100%;
+    padding: 30px 15px 0;
+}
+
+#opiniones .rounded-circle {
+    border: 2px solid rgb(95, 69, 220); 
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  #opiniones .border {
+    border-color: rgb(95, 69, 220); 
+  }
+  
+  #opiniones .bg-light {
+    background-color: rgb(42, 230, 198); 
+  }
+  
+  #opiniones h2 {
+    text-align: left;
+    margin-top: 0;
+    color: rgb(95, 69, 220); 
+  }
+  
+  
+/* Footer */
+footer {
+    color: rgb(95, 69, 220);
+    background-color: rgb(234, 234, 234);
+    padding: 20px 0;
+    border-top: 3px solid rgb(95, 69, 220);
+}
+
+footer form {
+    max-width:600px; 
+    margin: 0 auto; 
+    padding: 5px; 
+}
+
+footer .form-control {
+    width: 100%; 
+    padding: 8px; 
+    font-size: 14px; 
+}
+
+footer .btn-outline-secondary {
+    padding: 8px 15px; 
+    font-size: 14px; 
+    margin-top: 10px; 
+}
+
+
+footer .mb-2 {
+    margin-bottom: 6px; 
+}
+
+
+footer ul {
+    padding-left: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: rgb(103, 68, 221);
+}
+
+footer ul li a:hover {
+    color: #007bff;
+}
+
+/* Barra de redes sociales */
+#redes {
+    display: flex; 
+    justify-content: center; 
+    margin-top: 30px; 
+    width: 100%; 
+}
+
+#redes li {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin: 0 25px; 
+    list-style: none;
+}
+
+#redes li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: cover; 
+    text-decoration: none;
+}
+
+#instagram {
+    background-image: url('../images/logo_insta.png');
+}
+
+#instagram:hover {
+    background-position: left bottom;
+}
+
+#x {
+    background-image: url('../images/logos-tw.png');
+}
+
+#x:hover {
+    background-position: left bottom;
+}
+
+#facebook {
+    background-image: url('../images/logo_facebook.png');
+}
+
+#facebook:hover {
+    background-position: left bottom;
+}
+
+
+.footer-text {
+    margin-top: 50px; 
+    text-align: center; 
+}
+
+footer .list-unstyled {
+    margin: 0;
+    padding: 0;
+}
+
+footer .list-unstyled li {
+    margin-bottom: 10px;
+}
+
